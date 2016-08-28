@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+
+
   mount_devise_token_auth_for 'User', at: 'auth'
   mount_devise_token_auth_for 'Mang', at: 'mangs'
 
@@ -10,4 +13,11 @@ Rails.application.routes.draw do
 
   # routes within this block will authorize visitors using the Mang or User class
   get 'demo/members_only_group', to: 'demo_group#members_only'
+  
+  resources :managers do
+    resources :tutorials
+  end
+
+
+
 end

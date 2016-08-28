@@ -6,7 +6,7 @@ gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+# gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -32,8 +32,8 @@ gem 'devise_token_auth', '0.1.37.beta4'
 
 # omniauth providers
 gem 'omniauth-github',        :git => 'git://github.com/intridea/omniauth-github.git'
-gem 'omniauth-facebook',      :git => 'git://github.com/mkdynamic/omniauth-facebook.git'
-gem 'omniauth-google-oauth2', :git => 'git://github.com/zquestz/omniauth-google-oauth2.git'
+# gem 'omniauth-facebook',      :git => 'git://github.com/mkdynamic/omniauth-facebook.git'
+# gem 'omniauth-google-oauth2', :git => 'git://github.com/zquestz/omniauth-google-oauth2.git'
 
 gem 'figaro', :github => "laserlemon/figaro"
 
@@ -45,3 +45,7 @@ gem "pry-remote", group: :development
 
 # heroku
 gem 'rails_12factor', group: :production
+
+gem 'pry-byebug'
+# gem 'pry'
+gem 'pry-rails', :group => :development
